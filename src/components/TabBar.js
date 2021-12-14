@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
         color:"#fff",
         width:"70%",
         overflow:"hidden",
+        alignSelf:"center"
     }
     
 })

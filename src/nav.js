@@ -12,6 +12,7 @@ import KaiYan from './pages/kaiyan/KaiYan';
 import TouTiao from './pages/toutiao/TouTiao';
 import Douban from './pages/douban/Douban';
 import ArticleDetail from './pages/ArticleDetail';
+import SystemList from './pages/wanandroid/SystemList';
 
 //创建页面栈
 const Stack = createStackNavigator();
@@ -24,6 +25,7 @@ export class Nav extends Component {
               <Stack.Screen name="Splah" component={Splash} />
               <Stack.Screen name="Main" component={Main} />
               <Stack.Screen name="ArticleDetail" component={ArticleDetail} />
+              <Stack.Screen name="SystemList" component={SystemList} />
             </Stack.Navigator>
           </NavigationContainer>
         )

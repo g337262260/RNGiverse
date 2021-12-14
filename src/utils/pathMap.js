@@ -3,9 +3,15 @@
  */
  export const BASE_URI = "https://www.wanandroid.com";
 
- export const Banner = "/banner/json";
+ export const BANNER = "/banner/json";
 
- export const HomeList = "article/list/page/json"
+ export const TOP_ARTICLES = "/article/top/json";
+
+ export const HOMELIST = "/article/list/page/json";
+
+ export const SYSTEM = "/tree/json";
+
+ export const SYSTEM_LIST = "/article/list/page/json"
 
 
 

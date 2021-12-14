@@ -6,7 +6,7 @@ import {
 } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { pxToDp } from '../../utils/styleKits';
-import { Banner, HomeList } from '../../utils/pathMap'
+import { BANNER, HOMELIST,TOP_ARTICLES } from '../../utils/pathMap'
 import Swiper from 'react-native-swiper'
 import HeadBanner from '../../components/HeadBanner';
 import httpUtil from '../../utils/httpUtil';
@@ -85,23 +85,21 @@ export default class NewArticle extends Component {
 
     refreshData = async () => {
         this.setState({ isRefreshing: true });
-        pageNum = 0;
-        Promise.all([httpUtil.get(Banner), httpUtil.get(HomeList.replace('page',pageNum))]).then(
+        Promise.all([httpUtil.get(BANNER), httpUtil.get(TOP_ARTICLES), httpUtil.get(HOMELIST.replace('page',pageNum))]).then(
             values => {
                 this.setState({
                     banner: values[0].data.data,
-                    dataSource: values[1].data.data.datas,
+                    dataSource: values[1].data.data.concat(values[2].data.data.datas),
                     footType:0
                 })
-                // pageCount = values[1].data.data.pageCount;
-                pageCount =3;
+                pageNum +=1;
             }
         )
         this.setState({ isRefreshing: false });
     }
 
     loadData = async () => {
-        httpUtil.get(HomeList.replace('page',pageNum)).then(
+        httpUtil.get(HOMELIST.replace('page',pageNum)).then(
             res=>{
                 let foot = 0;
                 if(pageNum>=pageCount){
