@@ -10,8 +10,27 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "axios": "^0.24.0",
+    "querystring": "^0.2.1",
     "react": "17.0.2",
-    "react-native": "0.66.3"
+    "react-native": "0.66.3",
+    "react-native-elements": "^3.4.2",
+    "react-native-gesture-handler": "^2.1.0",
+    "react-native-i18n": "^2.0.15",
+    "react-native-pager-view": "^5.4.9",
+    "react-native-reanimated": "^2.3.0",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-swiper": "^1.6.0-rc.3",
+    "react-native-tab-navigator": "^0.3.4",
+    "react-native-tab-view": "^3.1.1",
+    "react-native-vector-icons": "^9.0.0",
+    "react-native-webview": "^11.15.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -25,5 +44,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/font"
+    ]
   }
 }
