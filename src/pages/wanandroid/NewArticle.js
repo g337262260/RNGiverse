@@ -7,7 +7,6 @@ import {
 import { Divider } from 'react-native-elements';
 import { pxToDp } from '../../utils/styleKits';
 import { BANNER, HOMELIST,TOP_ARTICLES } from '../../utils/pathMap'
-import Swiper from 'react-native-swiper'
 import HeadBanner from '../../components/HeadBanner';
 import httpUtil from '../../utils/httpUtil';
 import CommonFlatList from '../../components/CommonFlatList';
@@ -55,7 +54,7 @@ export default class NewArticle extends Component {
            <ArticleRow key={item.id} item={item}/>
         )
     }
-    
+
 
     _renderFooter = () => {
         if (this.state.footType === 1) {
@@ -116,7 +115,7 @@ export default class NewArticle extends Component {
 
     onEndReached = () => {
         const { footType} = this.state
-    
+
         if(footType !== 0){
             return;
         }

@@ -13,6 +13,11 @@
 
  export const SYSTEM_LIST = "/article/list/page/json"
 
+ export const WECHAT_AUTHOR = "/wxarticle/chapters/json"
+
+ export const NAV = "/navi/json"
+
+
 
 
 

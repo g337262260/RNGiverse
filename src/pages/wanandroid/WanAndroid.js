@@ -109,7 +109,7 @@ export default class WanAndroid extends React.Component {
         tabStyle={{width: 90}}
         // 懒加载相关代码
         lazy={true}
-        lazyPreloadDistance={1}
+        lazyPreloadDistance={3}
         initialLayout={{width: Dimensions.get('window').width}}
       />
     );

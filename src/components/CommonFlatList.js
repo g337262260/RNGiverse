@@ -34,7 +34,7 @@ export default class CommonFlatList extends Component {
             );
         } else if(this.state.footType === 0){
             return (
-                <View style={styles.footer}>
+                <View >
                     <Text></Text>
                 </View>
             );
@@ -76,7 +76,7 @@ export default class CommonFlatList extends Component {
                     }
                     onEndReached={this.onEndReached}
                     onEndReachedThreshold={1}
-                    
+
                 />
 
             </View>

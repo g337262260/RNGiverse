@@ -21,7 +21,7 @@ export class Nav extends Component {
     render() {
         return (
             <NavigationContainer>
-            <Stack.Navigator  headerMode="none" initialRouteName="Main">
+            <Stack.Navigator  headerMode="none" initialRouteName="Splash">
               <Stack.Screen name="Splah" component={Splash} />
               <Stack.Screen name="Main" component={Main} />
               <Stack.Screen name="ArticleDetail" component={ArticleDetail} />

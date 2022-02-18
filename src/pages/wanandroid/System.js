@@ -57,7 +57,7 @@ export default class System extends Component {
     render() {
 
         const { dataSource } = this.state;
-        console.log(dataSource);
+        // console.log(dataSource);
         return (
             <View>
                 <FlatList
